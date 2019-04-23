@@ -15,6 +15,7 @@ collections:
           name: "sections"
           widget: "list"
           fields:
+            - { label: "Section Id", name: "id", widget: "string"}
             - { label: "Section Title", name: "title", widget: "string"}
             - { label: "Section Body", name: "body", widget: "markdown"}
         
