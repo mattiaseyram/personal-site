@@ -1,11 +1,23 @@
 module.exports = {
-    webpack: (cfg) => {
-        cfg.module.rules.push(
+    webpack: (config, { defaultLoaders }) => {
+        config.module.rules.push(
             {
                 test: /\.md$/,
                 use: 'frontmatter-markdown-loader'
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    defaultLoaders.babel,
+                    {
+                        loader: require('styled-jsx/webpack').loader,
+                        options: {
+                            type: 'scoped'
+                        }
+                    }
+                ]
             }
         )
-        return cfg;
+        return config;
     }
 }
