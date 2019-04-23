@@ -18,5 +18,3 @@ collections:
             - { label: "Section Title", name: "title", widget: "string"}
             - { label: "Section Body", name: "body", widget: "markdown"}
         
-        }
-        
