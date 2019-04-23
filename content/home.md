@@ -7,6 +7,6 @@ cats:
 ---
 Welcome to my awesome page about cats of the internet. 
 
-This page is built with NextJS, and content is managed in Netlify CMS.
+This page is built wit**h NextJS, and c**ontent is managed in Netlify CMS.
 
 Test.
