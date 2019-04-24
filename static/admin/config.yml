@@ -10,15 +10,39 @@ collections:
       name: "home"
       file: "content/home.md"
       fields: 
-        - { label: "Title", name: "title", widget: "markdown", buttons: [] }
-        - { label: "Subtitle", name: "subtitle", widget: "markdown", buttons: [] }
+
+        - { label: "Title", name: "title", widget: "markdown", buttons: [], required: false }
+        - { label: "Subtitle", name: "subtitle", widget: "markdown", buttons: [], required: false }
+
         - label: "Sections"
           name: "sections"
           widget: "list"
           fields:
             - { label: "Section Id", name: "id", widget: "string"}
-            - { label: "Section Title", name: "title", widget: "markdown", buttons: [] }
-            - { label: "Alignment", name: "alignment", widget: "select", options: ["container-start", "container-center", "container-end"] }
-            - { label: "Section Subtitle", name: "subtitle", widget: "markdown", buttons: [] }
-            - { label: "Section Body", name: "body", widget: "markdown" }
+            - { label: "Type", name: "alignment", widget: "select", options: ["paragraph", "cards", "links"], default: "paragraph"}
+            - { label: "Alignment", name: "alignment", widget: "select", options: ["container-start", "container-center", "container-end"], default: "container-start"}
+            - { label: "Section Title", name: "title", widget: "markdown", buttons: [], required: false}
+            - { label: "Section Subtitle", name: "subtitle", widget: "markdown", buttons: [], required: false }
+
+            - { label: "Section Body", name: "body", widget: "markdown", required: false }
+
+            - label: "Section Cards"
+              name: "cards"
+              widget: "list"
+              required: false
+              fields:
+                - { label: "Card Title", name: "title", widget: "string", required: false}
+                - { label: "Card Subtitle", name: "subtitle", widget: "string", required: false}
+                - { label: "Card Date", name: "date", widget: "string", required: false}
+                - { label: "Card Content", name: "body", widget: "markdown", required: false}
+
+            - label: "Section Links"
+              name: "links"
+              widget: "list"
+              required: false
+              fields:
+                - { label: "Link Title", name: "title", widget: "string", required: false}
+                - { label: "Link Icon", name: "icon", widget: "string", required: false}
+                - { label: "Link Content", name: "body", widget: "markdown", required: false}
+
         

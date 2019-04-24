@@ -3,33 +3,24 @@ import React from 'react';
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 //components
-import Section from '../components/Section';
+import ParagraphSection from '../components/ParagraphSection';
 import ParticlesBackground from '../components/ParticlesBackground';
 //content
 import content from '../content/home.md';
 //styles
 import styles from '../styles/global.css';
 
-const particlesOptions = {
-    particles: {
-        number: {
-            value: 80,
-            density: {
-                enable: true,
-                value_area: 800
-            }
-        }
-    }
-};
 const Home = () => {
 
-    const { attributes } = content;
-    const { title, subtitle } = attributes;
+    const { attributes = {sections: []} } = content;
+    const { title = '', subtitle = '' } = attributes;
 
-    const sections = attributes.sections && attributes.sections.reduce((obj, section) => {
+    const sections = attributes.sections.reduce((obj, section) => {
         obj[section.id] = section;
         return obj;
     }, {});
+
+    console.log(sections);
 
     return (
         <div>
@@ -54,8 +45,6 @@ const Home = () => {
                     <ReactMarkdown className="subtitle" source={subtitle} />
                 </div>
 
-                {attributes.sections && attributes.sections.map((section, i) =>
-                    <Section key={i} {...section} />)}
             </div>
             <style global jsx>{styles}</style>
         </div>
