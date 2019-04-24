@@ -19,8 +19,8 @@ collections:
           widget: "list"
           fields:
             - { label: "Section Id", name: "id", widget: "string"}
-            - { label: "Type", name: "alignment", widget: "select", options: ["paragraph", "cards", "links"], default: "paragraph"}
-            - { label: "Alignment", name: "alignment", widget: "select", options: ["container-start", "container-center", "container-end"], default: "container-start"}
+            - { label: "Type", name: "alignment", widget: "select", options: ["paragraph", "cards", "links"], default: ["paragraph"]}
+            - { label: "Alignment", name: "alignment", widget: "select", options: ["container-start", "container-center", "container-end"], default: ["container-start"]}
             - { label: "Section Title", name: "title", widget: "markdown", buttons: [], required: false}
             - { label: "Section Subtitle", name: "subtitle", widget: "markdown", buttons: [], required: false }
 
