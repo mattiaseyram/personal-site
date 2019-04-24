@@ -10,15 +10,15 @@ collections:
       name: "home"
       file: "content/home.md"
       fields: 
-        - { label: "Title", name: "title", widget: "markdown", options: {buttons: ""} }
-        - { label: "Subtitle", name: "subtitle", widget: "markdown", options: {buttons: ""}  }
+        - { label: "Title", name: "title", widget: "markdown", buttons: [] }
+        - { label: "Subtitle", name: "subtitle", widget: "markdown", buttons: [] }
         - label: "Sections"
           name: "sections"
           widget: "list"
           fields:
             - { label: "Section Id", name: "id", widget: "string"}
-            - { label: "Section Title", name: "title", widget: "markdown", options: {buttons: ""} }
+            - { label: "Section Title", name: "title", widget: "markdown", buttons: [] }
             - { label: "Alignment", name: "alignment", widget: "select", options: ["container-start", "container-center", "container-end"] }
-            - { label: "Section Subtitle", name: "subtitle", widget: "markdown", options: {buttons: ""} }
+            - { label: "Section Subtitle", name: "subtitle", widget: "markdown", buttons: [] }
             - { label: "Section Body", name: "body", widget: "markdown" }
         
