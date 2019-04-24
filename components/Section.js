@@ -6,7 +6,7 @@ const Section = (props) => {
     const { body } = props;
 
     return (
-        <div>
+        <div className="item">
             <ReactMarkdown source={body}/>
         </div>
     )

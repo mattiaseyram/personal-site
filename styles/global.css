@@ -1,12 +1,61 @@
-
 /* @styled-jsx=global */
 
-body {
-    background-color: rgb(211, 255, 248);
+:root {
+    --main-bg-color: rgb(255, 255, 255);
+    --main-txt-color: rgb(0, 0, 0);
+    --secondary-txt-color: rgba(100, 125, 125, 0.75);
 }
 
-.container {
-    margin: 50px;
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Karla', sans-serif;
+    color: var(--main-txt-color);
+}
+
+.title>* {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 5em;
+    font-kerning: none;
+    line-height: 0em;
+}
+
+.subtitle>* {
+    font-weight: 700;
+    font-size: 2em;
+    font-kerning: none;
+    line-height: 0em;
+    text-align: right;
+    color: var(--secondary-txt-color);
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: false;
+    justify-content: flex-start;
+    margin: 10vw;
+}
+
+.container-start {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: true;
+    justify-content: flex-start;
+}
+
+.container-center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: true;
+    justify-content: center;
+}
+
+.container-end {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: true;
+    justify-content: flex-end;
 }
 
 .particles {
