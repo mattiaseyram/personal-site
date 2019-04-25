@@ -15,5 +15,19 @@ sections:
     id: intro
     title: ''
     type: paragraph
+  - alignment: container-start
+    id: contact
+    links:
+      - address: 'https://www.linkedin.com/in/mattiaseyram/'
+        title: /mattiaseyram
+      - address: 'https://github.com/mattiaseyram'
+        title: /mattiaseyram
+      - address: 'https://trailhead.com/me/mattiaseyram'
+        title: ' /mattiaseyram'
+      - address: mattiaseyram@gmail.com
+        title: mattiaseyram@gmail.com
+    title: ''
+    subtitle: Contact
+    type: links
 ---
 
