@@ -24,7 +24,7 @@ sections:
         title: /mattiaseyram
       - address: 'https://trailhead.com/me/mattiaseyram'
         title: ' /mattiaseyram'
-      - address: mattiaseyram@gmail.com
+      - address: 'mailto:mattiaseyram@gmail.com'
         title: mattiaseyram@gmail.com
     title: ''
     subtitle: Contact
