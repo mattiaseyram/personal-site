@@ -9,10 +9,11 @@ import ParticlesBackground from '../components/ParticlesBackground';
 import content from '../content/home.md';
 //styles
 import styles from '../styles/global.css';
+import ContactSection from '../components/ContactSection';
 
 const Home = () => {
 
-    const { attributes = {sections: []} } = content;
+    const { attributes = { sections: [] } } = content;
     const { title = '', subtitle = '' } = attributes;
 
     const sections = attributes.sections.reduce((obj, section) => {
@@ -20,33 +21,54 @@ const Home = () => {
         return obj;
     }, {});
 
-    console.log(sections);
+    //console.log(sections);
 
     return (
         <div>
+
             <Head>
-                <link href={`https://fonts.googleapis.com/css?family=${
+
+                <title>{title}</title>
+
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+                <link rel='shortcut icon' type='image/x-icon' href='/static/favicon/favicon.ico' />
+
+                <link href={'https://fonts.googleapis.com/css?family=' +
                     [
                         'Playfair+Display:400,400i,700,700i,900,900i',
                         'Karla:400,400i,700'
                     ].join('|')
-                    }`} rel="stylesheet"></link>
+                } rel="stylesheet"></link>
+
             </Head>
 
-            <ParticlesBackground />
+            <div className="container-top">
 
-            <div className="top-container">
-
-                <div className="container-start">
+                <div className="container container-start">
                     <ReactMarkdown className="title" source={title} />
                 </div>
 
-                <div className="container-end">
+                <div className="container container-end">
                     <ReactMarkdown className="subtitle" source={subtitle} />
                 </div>
 
+                <div className="divider" />
+
+                <ParagraphSection section={sections.intro} />
+
             </div>
+
+            <div className="container-top">
+
+                <ContactSection section={sections.contact} />
+
+            </div>
+
+            <ParticlesBackground />
+
             <style global jsx>{styles}</style>
+
         </div>
     );
 }
