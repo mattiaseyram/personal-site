@@ -23,8 +23,7 @@ const Home = () => {
         return obj;
     }, {});
 
-    const scrollSections = ['section1', 'section2'];
-
+    const scrollSections = ['intro', 'contact', 'projects'];
 
     return (
         <div>
@@ -52,7 +51,7 @@ const Home = () => {
 
             <ScrollButtons sections={scrollSections}/>
 
-            <div className="container-top container-center" id="section1">
+            <div className="container-top container-center" id={scrollSections[0]}>
 
                 <div className="container container-start">
                     <ReactMarkdown className="title" source={title} />
@@ -68,9 +67,15 @@ const Home = () => {
 
             </div>
 
-            <div className="container-top container-center" id="section2">
+            <div className="container-top container-center" id={scrollSections[1]}>
 
                 <ContactSection section={sections.contact} />
+
+            </div>
+
+            <div className="container-top container-center" id={scrollSections[2]}>
+
+                <ContactSection section={sections.projects} />
 
             </div>
 

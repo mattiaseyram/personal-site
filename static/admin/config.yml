@@ -35,6 +35,11 @@ collections:
                 - { label: "Card Subtitle", name: "subtitle", widget: "string", required: false}
                 - { label: "Card Date", name: "date", widget: "string", required: false}
                 - { label: "Card Content", name: "body", widget: "markdown", required: false}
+                - label: "Card Images"
+                  name: "images"
+                  widget: "list"
+                  required: false
+                  field: {label: Image, name: image, widget: image}
 
             - label: "Section Links"
               name: "links"

@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 //libs
-import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 
 const ContactSection = (props) => {
@@ -42,7 +41,7 @@ const ContactSection = (props) => {
 
                 <div className="container-item container-item-center">
 
-                    <img className="profile-image" src="/static/images/me.png"></img>
+                    <img className="profile-image" src="/static/img/me.png"></img>
 
                 </div>
 
@@ -62,4 +61,4 @@ const ContactSection = (props) => {
     )
 }
 
-export default ContactSection
+export default ContactSection;

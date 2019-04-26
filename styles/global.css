@@ -4,8 +4,8 @@
     --main-bg-color: rgb(255, 255, 255);
     --title-color: rgba(0, 0, 0, 1);
     --main-text-color: rgba(0, 0, 0, 0.8);
-    --secondary-text-color: rgba(100, 125, 125, 0.6);
-    --link-color: rgba(100, 125, 125, 0.9);
+    --secondary-text-color: rgba(100, 125, 125, 0.7);
+    --link-color: rgba(90, 120, 120, 0.95);
     --divider-color: rgba(100, 125, 125, 0.25);
     --translucent-color: rgba(255, 255, 255, 0.1);
     --hover-color: rgba(255, 255, 255, 0.4);
@@ -176,7 +176,7 @@ a {
     background-color: var(--transparent-color);
     color: white;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     opacity: 1;
     line-height: 100%;
     padding: 1vh;
