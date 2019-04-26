@@ -122,6 +122,7 @@ a {
     align-items: center;
     justify-content: center;
     padding: 2vh 0vw;
+    width: 100%;
 }
 
 .profile-image {
@@ -146,7 +147,7 @@ a {
 }
 
 .link-item {
-    padding: 2vh 2vw;
+    padding: 2vh 4vw;
     display: block;
     text-decoration: none;
     transition: 0.3s;
