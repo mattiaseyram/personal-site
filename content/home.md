@@ -19,14 +19,17 @@ sections:
     id: contact
     links:
       - address: 'https://www.linkedin.com/in/mattiaseyram/'
+        icon: fab fa-linkedin-in
         title: ' /mattiaseyram'
-        icon: 'fab fa-linkedin-in'
       - address: 'https://github.com/mattiaseyram'
-        title: /mattiaseyram
+        icon: fab fa-github
+        title: ' /mattiaseyram'
       - address: 'https://trailhead.com/me/mattiaseyram'
+        icon: fab fa-salesforce
         title: ' /mattiaseyram'
       - address: 'mailto:mattiaseyram@gmail.com'
-        title: mattiaseyram@gmail.com
+        icon: fas fa-envelope
+        title: ' mattiaseyram@gmail.com'
     title: Contact
     type: links
 ---
