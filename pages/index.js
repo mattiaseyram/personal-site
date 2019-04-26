@@ -41,9 +41,13 @@ const Home = () => {
                     ].join('|')
                 } rel="stylesheet"></link>
 
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"></link>
+
             </Head>
 
-            <div className="container-top">
+            <ParticlesBackground />
+
+            <div className="container-top container-center">
 
                 <div className="container container-start">
                     <ReactMarkdown className="title" source={title} />
@@ -59,13 +63,11 @@ const Home = () => {
 
             </div>
 
-            <div className="container-top">
+            <div className="container-top container-center">
 
                 <ContactSection section={sections.contact} />
 
             </div>
-
-            <ParticlesBackground />
 
             <style global jsx>{styles}</style>
 

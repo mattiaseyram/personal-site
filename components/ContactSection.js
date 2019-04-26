@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 //libs
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
@@ -8,33 +8,58 @@ const ContactSection = (props) => {
     const { section = {} } = props;
     const { id, type, alignment = "container-start", title, subtitle, body, links = [] } = section;
 
-    const linkElements = links.map((link, i) => {
+    const divider = <div className="divider" />;
 
-        return (
-
-            <Link href={link.address} key={i}>{link.title}</Link>
-
-        );
-    });
+    console.log(links)
+    const linkElements = links
+        .map((link, i) => (
+            <a href={link.address} key={i} className="link-item">
+                {link.icon &&
+                    <i class={link.icon}></i>}
+                {link.title}
+            </a>
+        ))
+        .reduce((acc, el) => ([...acc, el, divider]), [])
+        .slice(0, -1);
 
     return (
-        <div className={['container', 'container-links', alignment].join(' ')}>
-
-            <div className="container-item">
-
-                {title &&
+        <Fragment>
+            {title &&
+                <div className="container container-start">
                     <ReactMarkdown className="title" source={title} />
-                }
+                </div>
+            }
 
-                {subtitle &&
+            {subtitle &&
+                <div className="container container-end">
                     <ReactMarkdown className="subtitle" source={subtitle} />
-                }
+                </div>
+            }
+            {(title || subtitle) &&
+                <div className="divider" />
+            }
 
-                {linkElements}
+            <div className={['container', 'container-links', alignment].join(' ')}>
+
+                <div className="container-item container-item-center">
+
+                    <img className="profile-image" src="/static/images/me.png"></img>
+
+                </div>
+
+                <div className="container-item">
+
+                    <div className="link-item-container">
+
+                        {linkElements}
+
+                    </div>
+
+                </div>
 
             </div>
 
-        </div>
+        </Fragment>
     )
 }
 

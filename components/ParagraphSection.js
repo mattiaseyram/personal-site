@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 //libs
 import ReactMarkdown from 'react-markdown';
 
@@ -8,17 +8,35 @@ const ParagraphSection = (props) => {
     const { id, type, alignment = "container-start", title, subtitle, body } = section;
 
     return (
-        <div className={['container', 'container-paragraph', alignment].join(' ')}>
-            <div className="container-item">
-                {title &&
+        <Fragment>
+            {title &&
+                <div className="container container-start">
                     <ReactMarkdown className="title" source={title} />
-                }
-                {subtitle &&
+                </div>
+            }
+
+            {subtitle &&
+                <div className="container container-end">
                     <ReactMarkdown className="subtitle" source={subtitle} />
-                }
-                <ReactMarkdown source={body} />
+                </div>
+            }
+
+            {(title || subtitle) &&
+                <div className="divider" />
+            }
+
+            <div className={['container', 'container-paragraph', alignment].join(' ')}>
+                <div className="container-item">
+                    {title &&
+                        <ReactMarkdown className="title" source={title} />
+                    }
+                    {subtitle &&
+                        <ReactMarkdown className="subtitle" source={subtitle} />
+                    }
+                    <ReactMarkdown source={body} />
+                </div>
             </div>
-        </div>
+        </Fragment>
     )
 }
 
