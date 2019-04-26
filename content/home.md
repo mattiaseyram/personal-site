@@ -32,5 +32,20 @@ sections:
         title: ' mattiaseyram@gmail.com'
     title: Contact
     type: links
+  - alignment: container-center
+    cards:
+      - images:
+          - /static/img/elevate-dashboard-dev.netlify.com_students (1).png
+          - /static/img/elevate-dashboard-dev.netlify.com_students (2).png
+          - /static/img/elevate-dashboard-dev.netlify.com_students (3).png
+          - /static/img/elevate-dashboard-dev.netlify.com_students (4).png
+          - /static/img/elevate-dashboard-dev.netlify.com_students (5).png
+          - /static/img/elevate-dashboard-dev.netlify.com_students (8).png
+          - /static/img/elevate-dashboard-dev.netlify.com_students (9).png
+          - /static/img/elevate-dashboard-dev.netlify.com_students (10).png
+        title: Elevate Dashboard
+    id: projects
+    title: Projects
+    type: cards
 ---
 
