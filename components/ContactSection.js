@@ -8,18 +8,17 @@ const ContactSection = (props) => {
     const { section = {} } = props;
     const { id, type, alignment = "container-start", title, subtitle, body, links = [] } = section;
 
-    const divider = <div className="divider" />;
+    const divider = (key) => (<div className="divider" key={key}/>);
 
-    console.log(links)
     const linkElements = links
-        .map((link, i) => (
-            <a href={link.address} key={i} className="link-item">
+        .map((link) => (
+            <a href={link.address} className="link-item" key={link.address}>
                 {link.icon &&
-                    <i class={link.icon}></i>}
+                    <i className={link.icon}></i>}
                 {link.title}
             </a>
         ))
-        .reduce((acc, el) => ([...acc, el, divider]), [])
+        .reduce((acc, el) => ([...acc, el, divider(acc.length)]), [])
         .slice(0, -1);
 
     return (

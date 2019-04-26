@@ -3,21 +3,27 @@
 :root {
     --main-bg-color: rgb(255, 255, 255);
     --title-color: rgba(0, 0, 0, 1);
-    --main-txt-color: rgba(0, 0, 0, 0.8);
-    --secondary-txt-color: rgba(90, 120, 120, 0.6);
-    --link-color: rgba(90, 120, 120, 0.8);
-    --divider-color: rgba(100, 125, 125, 0.1);
-    --container-color: rgba(255, 255, 255, 0.05);
+    --main-text-color: rgba(0, 0, 0, 0.8);
+    --secondary-text-color: rgba(100, 125, 125, 0.6);
+    --link-color: rgba(100, 125, 125, 0.9);
+    --divider-color: rgba(100, 125, 125, 0.25);
+    --translucent-color: rgba(255, 255, 255, 0.1);
+    --hover-color: rgba(255, 255, 255, 0.4);
+    --transparent-color: rgba(255, 255, 255, 0);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--main-bg-color);
-    color: var(--main-txt-color);
+    color: var(--main-text-color);
     height: 100%;
 }
 
 .divider {
-    margin: 3vh 0vh;
+    margin: 2vh 0vh 4vh 0vh;
     border: 0;
     width: 100%;
     border-top: 2px solid var(--divider-color);
@@ -28,7 +34,7 @@ p, a {
     font-weight: 400;
     line-height: 150%;
     font-size: 1.1em;
-    color: var(--main-txt-color);
+    color: var(--main-text-color);
 }
 
 a {
@@ -65,7 +71,7 @@ a {
     text-align: right;
     margin: 0vh;
     line-height: 100%;
-    color: var(--secondary-txt-color);
+    color: var(--secondary-text-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -115,7 +121,7 @@ a {
     flex: 1;
     align-items: center;
     justify-content: center;
-    padding: 2vh;
+    padding: 2vh 0vw;
 }
 
 .profile-image {
@@ -125,6 +131,7 @@ a {
     border: 5px solid var(--divider-color);
     transform: rotate(5deg);
     backdrop-filter: blur(5px);
+    background-color: var(--translucent-color);
 }
 
 .link-item-container {
@@ -139,15 +146,47 @@ a {
 }
 
 .link-item {
-    padding: 2vh 4vw;
-    width: 100%;
+    padding: 2vh 2vw;
     display: block;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .link-item:hover {
-    background-color: rgba(255,255,255,0.5);
+    background-color: var(--hover-color);
     text-decoration: underline;
+}
+
+.scroll-buttons-container {
+    position: fixed;
+    bottom: 3vh;
+    right: 3vh; 
+    border-radius: 1vh;
+    background-color: var(--divider-color);
+    backdrop-filter: blur(5px);
+    padding: 1vh;
+    text-align: center;
+}
+
+.scroll-button {
+    border: none;
+    outline:none;
+    background-color: var(--transparent-color);
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    opacity: 1;
+    line-height: 100%;
+    padding: 1vh;
+    transition: 0.3s;
+}
+
+.scroll-button:hover {
+    color: var(--hover-color);
+}
+
+.scroll-button:active {
+    color: white;
 }
 
 .particles {

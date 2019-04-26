@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 //libs
-import Head from 'next/head'
-import ReactMarkdown from 'react-markdown'
+import Head from 'next/head';
+import ReactMarkdown from 'react-markdown';
 //components
 import ParagraphSection from '../components/ParagraphSection';
 import ParticlesBackground from '../components/ParticlesBackground';
@@ -10,18 +10,21 @@ import content from '../content/home.md';
 //styles
 import styles from '../styles/global.css';
 import ContactSection from '../components/ContactSection';
+import ScrollButtons from '../components/ScrollButtons';
 
 const Home = () => {
 
     const { attributes = { sections: [] } } = content;
     const { title = '', subtitle = '' } = attributes;
 
+    //get sections as map
     const sections = attributes.sections.reduce((obj, section) => {
         obj[section.id] = section;
         return obj;
     }, {});
 
-    //console.log(sections);
+    const scrollSections = ['section1', 'section2'];
+
 
     return (
         <div>
@@ -47,7 +50,9 @@ const Home = () => {
 
             <ParticlesBackground />
 
-            <div className="container-top container-center">
+            <ScrollButtons sections={scrollSections}/>
+
+            <div className="container-top container-center" id="section1">
 
                 <div className="container container-start">
                     <ReactMarkdown className="title" source={title} />
@@ -63,7 +68,7 @@ const Home = () => {
 
             </div>
 
-            <div className="container-top container-center">
+            <div className="container-top container-center" id="section2">
 
                 <ContactSection section={sections.contact} />
 

@@ -18,7 +18,8 @@
     "react-dom": "^16.8.6",
     "react-markdown": "^4.0.8",
     "react-modal": "^3.8.1",
-    "react-particles-js": "^2.6.0"
+    "react-particles-js": "^2.6.0",
+    "react-scrollspy": "^3.4.0"
   },
   "devDependencies": {
     "frontmatter-markdown-loader": "^1.6.0"
