@@ -130,7 +130,9 @@ sections:
 
           Repository: <https://github.com/ddclub/ddclub.github.io>
 
+        date: Spring 2018
         title: Double Degree Club Website
+        subtitle: 'React, Reactstrap'
     id: projects
     title: Projects
     type: cards
