@@ -7,7 +7,7 @@ import ParagraphSection from '../components/ParagraphSection';
 import ParticlesBackground from '../components/ParticlesBackground';
 import ContactSection from '../components/ContactSection';
 import ScrollButtons from '../components/ScrollButtons';
-import ProjectSection from '../components/ProjectSection';
+import CardSection from '../components/CardSection';
 //content
 import content from '../content/home.md';
 //styles
@@ -25,6 +25,8 @@ const Home = () => {
         return obj;
     }, {});
 
+    //console.log(sections);
+    
     const scrollSections = ['intro', 'contact', 'projects'];
 
     return (
@@ -75,7 +77,7 @@ const Home = () => {
 
             <div className="container-top" id={scrollSections[2]}>
 
-                <ProjectSection section={sections.projects} />
+                <CardSection section={sections.projects} />
 
             </div>
 

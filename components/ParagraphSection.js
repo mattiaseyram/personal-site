@@ -27,12 +27,6 @@ const ParagraphSection = (props) => {
 
             <div className={['container', 'container-paragraph', alignment].join(' ')}>
                 <div className="container-item">
-                    {title &&
-                        <ReactMarkdown className="title" source={title} />
-                    }
-                    {subtitle &&
-                        <ReactMarkdown className="subtitle" source={subtitle} />
-                    }
                     <ReactMarkdown source={body} />
                 </div>
             </div>
@@ -40,4 +34,4 @@ const ParagraphSection = (props) => {
     )
 }
 
-export default ParagraphSection
+export default ParagraphSection;

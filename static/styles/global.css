@@ -28,8 +28,11 @@ body {
     border-top: 2px solid var(--divider-color);
 }
 
-p, a {
+p, a, li, h1, h2, h3, h4, h5, h6 {
     font-family: 'Karla', sans-serif;
+}
+
+p, a, li {
     font-weight: 400;
     line-height: 150%;
     font-size: 1.1em;
@@ -45,7 +48,7 @@ a {
     margin: 4vh 0vh 4vh 0vh;
 }
 
-.title>* {
+.title.p, .title>* {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 2.5em;
@@ -71,7 +74,7 @@ a {
     margin: 0vh 0vh 3vh 0vh;
 }
 
-.subtitle>* {
+p.subtitle, .subtitle>* {
     font-family: 'Karla', sans-serif;
     font-weight: 700;
     font-size: 1.5em;
@@ -130,6 +133,13 @@ a {
 
 .container-cards {
     flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .container-cards>.container-item {
+        max-width: 60%;
+    }
 }
 
 .container-cards>.container-item {
@@ -137,6 +147,8 @@ a {
     flex-direction: column;
     border-radius: 2vw;
     background-color: var(--card-color);
+    flex-basis: 100%;
+    flex: 1;
     backdrop-filter: blur(5px);
     padding: 2vh 4vw;
     justify-content: start;

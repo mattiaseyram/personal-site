@@ -2,15 +2,15 @@ import React, { Fragment } from 'react';
 //libs
 import ReactMarkdown from 'react-markdown';
 //components
-import ProjectCard from './ProjectCard';
+import Card from './Card';
 
-const ProjectSection = (props) => {
+const CardSection = (props) => {
 
     const { section = {} } = props;
     const { id, type, alignment = "container-start", title, subtitle, body, cards = [] } = section;
 
     const cardElements = cards
-        .map((card,i) => (<ProjectCard card={card} key={i}/>));
+        .map((card,i) => (<Card card={card} key={i}/>));
 
     return (
         <Fragment>
@@ -38,4 +38,4 @@ const ProjectSection = (props) => {
     );
 };
 
-export default ProjectSection;
+export default CardSection;

@@ -9,7 +9,7 @@ const settings = {
 };
 
 
-const ProjectCard = (props) => {
+const Card = (props) => {
 
     const { card = {} } = props;
     const { title, subtitle, date, body, images = [] } = card;
@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
     const imageItems = images
         .map((image, i) => (
             <div key={i}>
-                    <img className="card-image" src={image} />
+                <img className="card-image" src={image} />
             </div>
         ));
 
@@ -25,8 +25,20 @@ const ProjectCard = (props) => {
     return (
         <div className="container-item">
 
+            {date &&
+                <p>{date}</p>
+            }
+
             {title &&
-                <ReactMarkdown className="subtitle" source={title} />
+                <p className="subtitle" >{title}</p>
+            }
+
+            {subtitle &&
+                <h4>{subtitle}</h4>
+            }
+
+            {body &&
+                <ReactMarkdown source={body} />
             }
 
             <div>
@@ -41,5 +53,5 @@ const ProjectCard = (props) => {
     );
 };
 
-export default ProjectCard;
+export default Card;
 
