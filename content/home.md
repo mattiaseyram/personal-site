@@ -76,8 +76,8 @@ sections:
         title: Full-Stack Engineering Intern
         subtitle: Vlocity
       - body: >-
-          -Developed and tested a POS application in CloudCraze/Salesforce for a
-          global food and beverage client, provided data management and
+          * Developed and tested a POS application in CloudCraze/Salesforce for
+          a global food and beverage client, provided data management and
           transformation support, and advised on the client site
 
           -Designed and developed Lightning Components, integrated Thomson
@@ -85,13 +85,10 @@ sections:
           for a luxury apparel client’s Salesforce Service Cloud and Communities
           implementation
 
-          - Assisted in implementing Salesforce Sales Cloud custom functionality
+          * Assisted in implementing Salesforce Sales Cloud custom functionality
           for a leading e-commerce client
-
-          Provided expertise on Salesforce data automation and continuous
-          integration to other projects within Slalom
-
-          - Worked with a non-profit furniture donation organization on a
+            Provided expertise on Salesforce data automation and continuous integration to other projects within Slalom
+          * Worked with a non-profit furniture donation organization on a
           pro-bono project to improve their donation management and analytics
           processes
         date: Winter 2018
