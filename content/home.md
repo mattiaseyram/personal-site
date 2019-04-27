@@ -34,7 +34,17 @@ sections:
     type: links
   - alignment: container-center
     cards:
-      - images:
+      - body: >-
+          * Worked alongside the founders of
+          [Elevate](http://velocity.uwaterloo.ca/2018/09/congratulations-to-elevate-for-taking-home-the-5k-accessibility-directorate-of-ontario-prize/)
+          through [UW Blueprint](https://uwblueprint.org/) to develop Elevate’s
+          game-based e-learning platform
+
+          * Designed the architecture and led development for the Elevate
+          Dashboard, which is the portal used by the administrators of the
+          players to assess their scores and manage their account 
+        date: Winter 2019
+        images:
           - /static/img/elevate-dashboard-dev.netlify.com_students (1).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (2).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (3).png
@@ -44,6 +54,7 @@ sections:
           - /static/img/elevate-dashboard-dev.netlify.com_students (9).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (10).png
         title: Elevate Dashboard
+        subtitle: 'React, Redux and Material UI'
     id: projects
     title: Projects
     type: cards
