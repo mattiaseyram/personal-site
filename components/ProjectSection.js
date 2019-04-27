@@ -1,13 +1,16 @@
 import React, { Fragment } from 'react';
 //libs
 import ReactMarkdown from 'react-markdown';
+//components
+import ProjectCard from './ProjectCard';
 
 const ProjectSection = (props) => {
 
     const { section = {} } = props;
     const { id, type, alignment = "container-start", title, subtitle, body, cards = [] } = section;
 
-    const divider = (key) => (<div className="divider" key={key}/>);
+    const cardElements = cards
+        .map((card,i) => (<ProjectCard card={card} key={i}/>));
 
     return (
         <Fragment>
@@ -22,17 +25,17 @@ const ProjectSection = (props) => {
                     <ReactMarkdown className="subtitle" source={subtitle} />
                 </div>
             }
+            
             {(title || subtitle) &&
                 <div className="divider" />
             }
 
-            <div className={['container', 'container-projects', alignment].join(' ')}>
-
-
+            <div className={['container', 'container-cards', alignment].join(' ')}>
+                {cardElements}
             </div>
 
         </Fragment>
-    )
-}
+    );
+};
 
 export default ProjectSection;

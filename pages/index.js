@@ -5,12 +5,14 @@ import ReactMarkdown from 'react-markdown';
 //components
 import ParagraphSection from '../components/ParagraphSection';
 import ParticlesBackground from '../components/ParticlesBackground';
+import ContactSection from '../components/ContactSection';
+import ScrollButtons from '../components/ScrollButtons';
+import ProjectSection from '../components/ProjectSection';
 //content
 import content from '../content/home.md';
 //styles
-import styles from '../styles/global.css';
-import ContactSection from '../components/ContactSection';
-import ScrollButtons from '../components/ScrollButtons';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import '../static/styles/global.css';
 
 const Home = () => {
 
@@ -49,12 +51,10 @@ const Home = () => {
 
             <ParticlesBackground />
 
-            <ScrollButtons sections={scrollSections}/>
-
             <div className="container-top container-center" id={scrollSections[0]}>
 
                 <div className="container container-start">
-                    <ReactMarkdown className="title" source={title} />
+                    <ReactMarkdown className="title big-title" source={title} />
                 </div>
 
                 <div className="container container-end">
@@ -67,19 +67,19 @@ const Home = () => {
 
             </div>
 
-            <div className="container-top container-center" id={scrollSections[1]}>
+            <div className="container-top" id={scrollSections[1]}>
 
                 <ContactSection section={sections.contact} />
 
             </div>
 
-            <div className="container-top container-center" id={scrollSections[2]}>
+            <div className="container-top" id={scrollSections[2]}>
 
-                <ContactSection section={sections.projects} />
+                <ProjectSection section={sections.projects} />
 
             </div>
 
-            <style global jsx>{styles}</style>
+            <ScrollButtons sections={scrollSections} />
 
         </div>
     );

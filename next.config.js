@@ -1,23 +1,15 @@
-module.exports = {
-    webpack: (config, { defaultLoaders }) => {
+//next.config.js
+const withCSS = require("@zeit/next-css");
+
+const config = {
+    webpack: (config) => {
         config.module.rules.push(
             {
                 test: /\.md$/,
                 use: 'frontmatter-markdown-loader'
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    defaultLoaders.babel,
-                    {
-                        loader: require('styled-jsx/webpack').loader,
-                        options: {
-                            type: 'scoped'
-                        }
-                    }
-                ]
-            }
-        )
+            });
         return config;
     }
-}
+};
+
+module.exports = withCSS(config);
