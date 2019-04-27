@@ -4,11 +4,13 @@ import ReactMarkdown from 'react-markdown';
 
 const ParagraphSection = (props) => {
 
-    const { section = {} } = props;
+    const { section = {}, useContainer = false } = props;
     const { id, type, alignment = "container-start", title, subtitle, body } = section;
 
+    const divProps = useContainer ? {className:"container-top", id} : {};
+
     return (
-        <div className="container-top" id={id}>
+        <div {...divProps}>
             {title &&
                 <div className="container container-start">
                     <ReactMarkdown className="title" source={title} />
