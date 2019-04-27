@@ -7,11 +7,11 @@ subtitle: |-
 sections:
   - alignment: container-start
     body: >-
-      I'm a driven, well-rounded individual graduating from _The University of
-      Waterloo_ and _Wilfrid Laurier University_'s joint **Computer Science**
-      and **Business Administration** degree in 2020. I'm passionate about
-      software engineering, business enablement, and product development and
-      design.
+      I'm a driven, well-rounded individual with over 1 year of professional
+      work experience. I graduate from _The University of Waterloo_ and _Wilfrid
+      Laurier University_'s joint **Computer Science** and **Business
+      Administration** co-op degree in 2020. I'm passionate about full-stack
+      software engineering, business enablement, product development and design.
     id: intro
     title: ''
     type: paragraph
