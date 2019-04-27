@@ -95,9 +95,12 @@ sections:
           through [UW Blueprint](https://uwblueprint.org/) to develop Elevate’s
           game-based e-learning platform
 
-          * Designed the architecture and led development for the Elevate
-          Dashboard, which is the portal used by the administrators of the
-          players to assess their scores and manage their account 
+          * Designed the architecture and led development of the portal used by
+          the administrators of the players to assess their scores and manage
+          their account 
+
+          * Utilized the React, Redux, Material UI, Recharts front-end
+          libraries, and Python Flask + Postgres for the server
         date: Winter 2019
         images:
           - /static/img/elevate-dashboard-dev.netlify.com_students (1).png
@@ -110,6 +113,24 @@ sections:
           - /static/img/elevate-dashboard-dev.netlify.com_students (10).png
         title: Elevate Dashboard
         subtitle: 'React, Redux and Material UI'
+      - body: >+
+          * Created all core functionality of the new fully dynamic website
+
+          * Built with ReactJS and Reactstrap, with all content coming from
+          Prismic.io's headless CMS (no static pages!)
+
+          * Hosted using Netlify and Github
+
+          * Led and taught a team of 4 to address styling and additional
+          features
+
+
+          Site: <https://ddclub.uwaterloo.ca/#/>
+
+
+          Repository: <https://github.com/ddclub/ddclub.github.io>
+
+        title: Double Degree Club Website
     id: projects
     title: Projects
     type: cards
