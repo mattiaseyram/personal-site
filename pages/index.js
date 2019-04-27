@@ -26,8 +26,8 @@ const Home = () => {
     }, {});
 
     //console.log(sections);
-    
-    const scrollSections = ['intro', 'contact', 'projects'];
+
+    const scrollSections = ['intro', 'contact', 'experience', 'projects'];
 
     return (
         <div>
@@ -69,17 +69,11 @@ const Home = () => {
 
             </div>
 
-            <div className="container-top" id={scrollSections[1]}>
+            <ContactSection section={sections.contact} />
 
-                <ContactSection section={sections.contact} />
+            <CardSection section={sections.experience} />
 
-            </div>
-
-            <div className="container-top" id={scrollSections[2]}>
-
-                <CardSection section={sections.projects} />
-
-            </div>
+            <CardSection section={sections.projects} />
 
             <ScrollButtons sections={scrollSections} />
 

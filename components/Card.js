@@ -21,24 +21,25 @@ const Card = (props) => {
             </div>
         ));
 
-    console.log(card);
     return (
-        <div className="container-item">
-
-            {date &&
-                <p>{date}</p>
-            }
+        <div className="container-item card">
 
             {title &&
-                <p className="subtitle" >{title}</p>
+                <p className="card-title" >{title}</p>
             }
 
-            {subtitle &&
-                <h4>{subtitle}</h4>
+            {(date || subtitle) &&
+                <div className="card-subtitle-container">
+                <p className="card-subtitle">{subtitle}</p>
+                <p className="card-subtitle card-date">{date}</p>
+
+                </div>
             }
+
+            <div className="divider" />
 
             {body &&
-                <ReactMarkdown source={body} />
+                <ReactMarkdown className="card-text" source={body} />
             }
 
             <div>

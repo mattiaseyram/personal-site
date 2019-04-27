@@ -8,7 +8,7 @@ const ParagraphSection = (props) => {
     const { id, type, alignment = "container-start", title, subtitle, body } = section;
 
     return (
-        <Fragment>
+        <div className="container-top" id={id}>
             {title &&
                 <div className="container container-start">
                     <ReactMarkdown className="title" source={title} />
@@ -30,7 +30,7 @@ const ParagraphSection = (props) => {
                     <ReactMarkdown source={body} />
                 </div>
             </div>
-        </Fragment>
+        </div>
     )
 }
 

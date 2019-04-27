@@ -6,12 +6,12 @@ const ScrollButtons = (props) => {
 
     const { sections } = props;
 
-    const [links, setPrevSection] = useState({
+    const [links, setLinks] = useState({
         prev: 'section1',
         next: 'section2'
     });
 
-    const setLinks = (currentSection) => {
+    const setLinksFromCur = (currentSection) => {
 
         const curIndex = sections.findIndex(item => item === currentSection);
 
@@ -19,7 +19,7 @@ const ScrollButtons = (props) => {
 
         const nextIndex = Math.min(curIndex + 1, sections.length - 1);
 
-        setPrevSection({
+        setLinks({
             prev: sections[prevIndex],
             next: sections[nextIndex]
         });
@@ -29,14 +29,14 @@ const ScrollButtons = (props) => {
     return (
         <React.Fragment>
         <div className="scroll-buttons-container">
-            <a className="scroll-button" href={'#'+links.prev}>
+            <a className="scroll-button" href={'#'+links.prev} onClick={() => setTimeout(() => setLinksFromCur(links.prev), 50)}>
                 <i className="fas fa-chevron-up"></i>
             </a>
-            <a className="scroll-button" href={'#'+links.next}>
+            <a className="scroll-button" href={'#'+links.next} onClick={() => setTimeout(() => setLinksFromCur(links.next), 50)}>
                 <i className="fas fa-chevron-down"></i>
             </a>
         </div>
-        <Scrollspy items={sections} onUpdate={(el) => setLinks(el ? el.id : null)}/>
+        <Scrollspy items={sections} onUpdate={(el) => setLinksFromCur(el ? el.id : null)}/>
         </React.Fragment>
     )
 }

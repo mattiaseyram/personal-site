@@ -21,7 +21,7 @@ const ContactSection = (props) => {
         .slice(0, -1);
 
     return (
-        <Fragment>
+        <div className="container-top" id={id}>
             {title &&
                 <div className="container container-start">
                     <ReactMarkdown className="title" source={title} />
@@ -57,7 +57,7 @@ const ContactSection = (props) => {
 
             </div>
 
-        </Fragment>
+        </div>
     )
 }
 
