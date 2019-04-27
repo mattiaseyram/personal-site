@@ -82,7 +82,7 @@ sections:
           - Received an Excellence award in project management tasks, automation
           and process improvements
         date: Winter 2017
-        title: IT PM Specialist and Business Systems Analyst
+        title: IT Project Management Specialist
         subtitle: Sun Life Financial
     id: experience
     title: Experience
