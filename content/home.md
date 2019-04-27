@@ -48,7 +48,7 @@ sections:
           execution on the fly
         date: Fall 2018
         title: Full-Stack Engineering Intern
-        subtitle: Vlocity
+        subtitle: Vlocity (San Francisco)
       - body: >-
           * Developed and tested a POS application in CloudCraze/Salesforce for
           a global food and beverage client, provided data management and
@@ -67,7 +67,7 @@ sections:
           processes
         date: Winter 2018
         title: Salesforce Development Intern
-        subtitle: Slalom Consulting
+        subtitle: Slalom Consulting (Toronto)
       - body: >-
           - Managed multiple projects of varying sizes in the Investments and
           Corporate Application Services division
@@ -83,7 +83,7 @@ sections:
           and process improvements
         date: Winter 2017
         title: IT Project Management Specialist
-        subtitle: Sun Life Financial
+        subtitle: Sun Life Financial (Waterloo)
     id: experience
     title: Experience
     type: cards
