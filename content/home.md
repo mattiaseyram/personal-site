@@ -125,10 +125,14 @@ sections:
           features
 
 
-          Site: <https://ddclub.uwaterloo.ca/#/>
+          Site:  
+          
+          <https://ddclub.uwaterloo.ca/#/>
 
 
-          Repository: <https://github.com/ddclub/ddclub.github.io>
+          Repository:  
+          
+          <https://github.com/ddclub/ddclub.github.io>
 
         date: Spring 2018
         title: Double Degree Club Website

@@ -38,11 +38,13 @@ p, a, li {
     line-height: 150%;
     font-size: 1.1em;
     color: var(--main-text-color);
+    overflow-wrap: break-word;
+    white-space: normal;
+    word-break: break-word;
 }
 
 a {
     color: var(--link-color);
-    white-space: nowrap;
 }
 
 ul, li {
@@ -240,6 +242,7 @@ ul, li {
     text-decoration: none;
     transition: 0.3s;
     color: var(--main-text-color);
+    white-space: nowrap;
 }
 
 .link-item:hover {
