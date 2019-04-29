@@ -35,36 +35,24 @@ sections:
   - alignment: container-center
     cards:
       - body: >-
-          - Prototyped and developed a product to allow Vlocity customers to
-          execute, create 
+          * Prototyped and developed the Vlocity Upgrade and Diagnostic Wizard
+          (UPW), a lightning application and platform to create, execute, and
+          track recurring automatic declarative tasks
 
-          and track recurring automatic declarative tasks in Salesforce
-          Lightning (Aura JS) and Apex (Java), utilizing the Salesforce
-          Lightning Design System 
+          * Guided the docs team on replacing complex administrator
+          documentation with generated UPW JSON files
 
-          - Created a REST API wrapper to utilize the Tooling API within
-          Salesforce, allowing metadata changes and anonymous code 
+          * Created a dynamic REST API wrapper to utilize the Tooling API within
+          Salesforce Lightning and Apex, providing anonymous code execution and
+          metadata changes of any object on the ﬂy
 
-          execution on the fly
+          * Created a pipeline using Node.js and Jenkins allowing stand-alone
+          applications to be packaged outside of individual Vlocity industry
+          packages, preventing code duplication and increasing maintainability
         date: Fall 2018
         title: Full-Stack Engineering Intern
         subtitle: Vlocity (San Francisco)
-      - body: >-
-          * Developed and tested a POS application in CloudCraze/Salesforce for
-          a global food and beverage client, provided data management and
-          transformation support, and advised on the client site
-
-          -Designed and developed Lightning Components, integrated Thomson
-          Reuters ONESOURCE tax tool, and integrated Adyen payment processing
-          for a luxury apparel client’s Salesforce Service Cloud and Communities
-          implementation
-
-          * Assisted in implementing Salesforce Sales Cloud custom functionality
-          for a leading e-commerce client
-            Provided expertise on Salesforce data automation and continuous integration to other projects within Slalom
-          * Worked with a non-profit furniture donation organization on a
-          pro-bono project to improve their donation management and analytics
-          processes
+      - body: "* Developed and tested a POS application in CloudCraze/Salesforce for a global food and beverage client\r- Designed and developed components, integrated TR ONESOURCE tax and Adyen payment for a luxury apparel client’s Sales Cloud and Service Cloud\r- Assisted in implementing Sales Cloud custom functionality for a leading e-commerce client\r- Provided expertise on data analytics and continuous integration best practices to multiple projects\n* Improved the Furniture Bank’s donation management and analytics processes on a pro-bono project \n"
         date: Winter 2018
         title: Salesforce Development Intern
         subtitle: Slalom Consulting (Toronto)
@@ -112,7 +100,7 @@ sections:
           - /static/img/elevate-dashboard-dev.netlify.com_students (9).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (10).png
         title: Elevate Dashboard
-        subtitle: 'React, Redux and Material UI'
+        subtitle: UW Blueprint
       - body: >+
           * Created all core functionality of the new fully dynamic website
 
@@ -126,17 +114,34 @@ sections:
 
 
           Site:  
-          
+
           <https://ddclub.uwaterloo.ca/#/>
 
 
           Repository:  
-          
+
           <https://github.com/ddclub/ddclub.github.io>
 
         date: Spring 2018
         title: Double Degree Club Website
-        subtitle: 'React, Reactstrap'
+        subtitle: Double Degree Club
+      - body: >-
+          * Created YourAMA, a fully-functioning personalized “Ask Me Anything”
+          platform in 1 day at the Netlify JAMStack Hackathon in San Francisco,
+          CA
+
+          * Utilized a Firebase backend, and ReactJS with the Bulma CSS
+          framework
+
+
+          Site:
+
+          <https://yourama.netlify.com/splash>
+
+          Repository:
+        date: Fall 2018
+        title: YourAMA
+        subtitle: Netlify JAMStack Hackathon
     id: projects
     title: Projects
     type: cards
