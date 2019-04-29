@@ -52,7 +52,22 @@ sections:
         date: Fall 2018
         title: Full-Stack Engineering Intern
         subtitle: Vlocity (San Francisco)
-      - body: "* Developed and tested a POS application in CloudCraze/Salesforce for a global food and beverage client\r- Designed and developed components, integrated TR ONESOURCE tax and Adyen payment for a luxury apparel client’s Sales Cloud and Service Cloud\r- Assisted in implementing Sales Cloud custom functionality for a leading e-commerce client\r- Provided expertise on data analytics and continuous integration best practices to multiple projects\n* Improved the Furniture Bank’s donation management and analytics processes on a pro-bono project \n"
+      - body: >-
+          * Developed and tested a POS application in CloudCraze/Salesforce for
+          a global food and beverage client
+
+          * Designed and developed components, integrated TR ONESOURCE tax and
+          Adyen payment for a luxury apparel client’s Sales Cloud and Service
+          Cloud
+
+          * Assisted in implementing Sales Cloud custom functionality for a
+          leading e-commerce client
+
+          * Provided expertise on data analytics and continuous integration best
+          practices to multiple projects
+
+          * Improved the Furniture Bank’s donation management and analytics
+          processes on a pro-bono project
         date: Winter 2018
         title: Salesforce Development Intern
         subtitle: Slalom Consulting (Toronto)
@@ -91,12 +106,12 @@ sections:
           libraries, and Python Flask + Postgres for the server
         date: Winter 2019
         images:
+          - /static/img/elevate-dashboard-dev.netlify.com_students (8).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (1).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (2).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (3).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (4).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (5).png
-          - /static/img/elevate-dashboard-dev.netlify.com_students (8).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (9).png
           - /static/img/elevate-dashboard-dev.netlify.com_students (10).png
         title: Elevate Dashboard
