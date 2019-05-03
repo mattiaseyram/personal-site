@@ -13,6 +13,7 @@ import content from '../content/home.md';
 //styles
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../static/styles/global.css';
+import Links from '../components/Links';
 
 const Home = () => {
 
@@ -66,6 +67,8 @@ const Home = () => {
                 <div className="divider" />
 
                 <ParagraphSection section={sections.intro} />
+
+                <Links links={scrollSections} />
 
             </div>
 
