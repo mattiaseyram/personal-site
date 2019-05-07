@@ -153,7 +153,10 @@ sections:
 
           <https://yourama.netlify.com/splash>
 
+
           Repository:
+
+          <https://github.com/mattiaseyram/JAMStack-Hackathon-Team-App>
         date: Fall 2018
         title: YourAMA
         subtitle: Netlify JAMStack Hackathon
