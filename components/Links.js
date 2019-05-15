@@ -1,16 +1,37 @@
 import React, { Fragment } from 'react';
 
-const Links = (props) => {
+const Links = () => {
 
-    const { links = [] } = props;
+    const links = [
+        {
+            path: '#intro',
+            label: 'intro'
+        },
+        {
+            path: '#contact',
+            label: 'contact'
+        },
+        {
+            path: '#experience',
+            label: 'experience'
+        },
+        {
+            path: '#projects',
+            label: 'projects'
+        },
+        {
+            path: '/static/pdf/Mattias Eyram Resume Spring 2019 WEB.pdf',
+            label: 'resume'
+        }
+    ];
 
     const bullet = (key) => (
         <span key={key}> - </span>
     );
 
     const linkElements = links
-        .map(item => (
-            <a href={'#' + item} className="" key={item}>{item}</a>
+        .map((item, i) => (
+            <a href={item.path} className="" key={i}>{item.label}</a>
         ))
         .reduce((acc, el) => ([...acc, el, bullet(acc.length)]), [])
         .slice(0, -1);

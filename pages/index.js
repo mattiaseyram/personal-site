@@ -68,7 +68,7 @@ const Home = () => {
 
                 <ParagraphSection section={sections.intro} />
 
-                <Links links={scrollSections} />
+                <Links />
 
             </div>
 
