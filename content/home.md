@@ -42,9 +42,9 @@ sections:
           * Guided the docs team on replacing complex administrator
           documentation with generated UPW JSON files
 
-          * Created a dynamic REST API wrapper to utilize the Tooling API within
-          Salesforce Lightning and Apex, providing anonymous code execution and
-          metadata changes of any object on the ﬂy
+          * Developed a dynamic REST API wrapper to utilize the Tooling API
+          within Salesforce Lightning and Apex, providing anonymous code
+          execution and metadata changes of any object on the fly
 
           * Created a pipeline using Node.js and Jenkins allowing stand-alone
           applications to be packaged outside of individual Vlocity industry
@@ -54,11 +54,11 @@ sections:
         subtitle: Vlocity (San Francisco)
       - body: >-
           * Developed and tested a POS application in CloudCraze/Salesforce for
-          a global food and beverage client
+          a global food and beverage client 
 
           * Designed and developed components, integrated TR ONESOURCE tax and
           Adyen payment for a luxury apparel client’s Sales Cloud and Service
-          Cloud
+          Cloud 
 
           * Assisted in implementing Sales Cloud custom functionality for a
           leading e-commerce client
@@ -72,17 +72,17 @@ sections:
         title: Salesforce Development Intern
         subtitle: Slalom Consulting (Toronto)
       - body: >-
-          - Managed multiple projects of varying sizes in the Investments and
+          * Managed multiple projects of varying sizes in the Investments and
           Corporate Application Services division
 
-          - Developed time-saving project resource management software used by
-          full-time PMs and other automation software
+          * Developed time-saving project resource management software used by
+          full-time PMs as well as other automation software
 
-          - Chosen among Sun Life Financial Co-op students to present to
+          * Chosen among Sun Life Financial Co-op students to present to
           Investments and Corporate Application Services Vice President and
           senior members
 
-          - Received an Excellence award in project management tasks, automation
+          * Received an Excellence award in project management tasks, automation
           and process improvements
         date: Winter 2017
         title: IT Project Management Specialist
