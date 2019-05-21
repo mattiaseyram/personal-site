@@ -144,12 +144,11 @@ sections:
           framework
 
 
-          Site:[
-          https://yourama.netlify.com/splash](https://yourama.netlify.com/splash)
+          Site: <https://yourama.netlify.com/splash>
 
 
-          Repository:[
-          https://github.com/mattiaseyram/JAMStack-Hackathon-Team-App](https://github.com/mattiaseyram/JAMStack-Hackathon-Team-App)
+          Repository:
+          <https://github.com/mattiaseyram/JAMStack-Hackathon-Team-App>
         date: Fall 2018
         title: YourAMA
         subtitle: Netlify JAMStack Hackathon
