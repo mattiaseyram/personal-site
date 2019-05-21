@@ -116,7 +116,7 @@ sections:
           - /static/img/elevate-dashboard-dev.netlify.com_students (10).png
         title: Elevate Dashboard
         subtitle: UW Blueprint
-      - body: >+
+      - body: >-
           * Created all core functionality of the new fully dynamic website
 
           * Built with ReactJS and Reactstrap, with all content coming from
@@ -128,15 +128,10 @@ sections:
           features
 
 
-          Site:  
-
-          <https://ddclub.uwaterloo.ca/#/>
+          Site: <https://ddclub.uwaterloo.ca/#/>
 
 
-          Repository:  
-
-          <https://github.com/ddclub/ddclub.github.io>
-
+          Repository: <https://github.com/ddclub/ddclub.github.io>
         date: Spring 2018
         title: Double Degree Club Website
         subtitle: Double Degree Club
