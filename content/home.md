@@ -69,7 +69,7 @@ sections:
           * Improved the Furniture Bank’s donation management and analytics
           processes on a pro-bono project
         date: Winter 2018
-        title: Salesforce Development Intern
+        title: Development and Consulting Intern
         subtitle: Slalom Consulting (Toronto)
       - body: >-
           * Managed multiple projects of varying sizes in the Investments and
