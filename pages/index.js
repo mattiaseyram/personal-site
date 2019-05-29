@@ -36,9 +36,26 @@ const Home = () => {
 
             <Head>
 
+                <meta name="google-site-verification" content="_TkikPUrmRwwR5KES8-0-W2iNz8vez5BkIPK4gXOYes" />
+
+                <script
+                    async
+                    src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+                />
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `
+                    }}
+                />
+
                 <title>{title}</title>
 
-                <meta name="google-site-verification" content="_TkikPUrmRwwR5KES8-0-W2iNz8vez5BkIPK4gXOYes" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
                 <link rel='shortcut icon' type='image/x-icon' href='/static/favicon/favicon.ico' />
 
