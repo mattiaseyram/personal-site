@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 //libs
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
+import { withAmp } from 'next/amp'
 //components
 import ParagraphSection from '../components/ParagraphSection';
 import ParticlesBackground from '../components/ParticlesBackground';
@@ -30,10 +31,27 @@ const Home = () => {
 
     const scrollSections = ['intro', 'contact', 'experience', 'projects'];
 
+    const GA_TRACKING_ID = 'UA-141061998-1';
+
     return (
         <div>
 
             <Head>
+
+                <script
+                    async
+                    src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+                />
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `
+                    }}
+                />
 
                 <title>{title}</title>
 
@@ -84,4 +102,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default withAmp(Home);
