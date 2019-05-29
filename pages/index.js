@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 //libs
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
-import { withAmp } from 'next/amp'
 import { GA_TRACKING_ID } from '../lib/gtag';
 //components
 import ParagraphSection from '../components/ParagraphSection';
@@ -86,4 +85,4 @@ const Home = () => {
     );
 }
 
-export default withAmp(Home);
+export default Home;
