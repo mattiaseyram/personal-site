@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import { withAmp } from 'next/amp'
+import { GA_TRACKING_ID } from '../lib/gtag';
 //components
 import ParagraphSection from '../components/ParagraphSection';
 import ParticlesBackground from '../components/ParticlesBackground';
@@ -30,8 +31,6 @@ const Home = () => {
     //console.log(sections);
 
     const scrollSections = ['intro', 'contact', 'experience', 'projects'];
-
-    const GA_TRACKING_ID = 'UA-141061998-1';
 
     return (
         <div>
