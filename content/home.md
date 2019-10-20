@@ -34,56 +34,44 @@ sections:
     type: links
   - alignment: container-center
     cards:
+      - body: ''
+        date: Fall 2019
+        title: Backend Developer Intern
+        subtitle: Shopify - Money
       - body: >-
-          * Prototyped and developed the Vlocity Upgrade and Diagnostic Wizard
-          (UPW), a lightning application and platform to create, execute, and
-          track recurring automatic declarative tasks
+          * Prototyped and shipped the Vlocity Upgrade Wizard, a web platform
+          used by multiple clients to create, execute, automate and diagnose
+          declarative tasks
 
-          * Guided the docs team on replacing complex administrator
-          documentation with generated UPW JSON files
+          * Guided the docs team on replacing complex admin documentation with
+          JSON generated through the step creator UI
 
-          * Developed a dynamic REST API wrapper to utilize the Tooling API
-          within Salesforce Lightning and Apex, providing anonymous code
-          execution and metadata changes of any object on the fly
+          * Developed a dynamic Tooling REST API wrapper enabling metadata
+          changes through Salesforce Lightning and Apex
 
-          * Created a pipeline using Node.js and Jenkins allowing stand-alone
-          applications to be packaged outside of individual Vlocity industry
-          packages, preventing code duplication and increasing maintainability
+          * Created a pipeline to package stand-alone apps outside of the
+          Vlocity codebase, preventing code duplication and increasing
+          maintainability
         date: Fall 2018
         title: Full-Stack Engineering Intern
         subtitle: Vlocity (San Francisco)
       - body: >-
-          * Developed and tested a POS application in CloudCraze/Salesforce for
-          a global food and beverage client 
+          * Developed and tested a Commerce Cloud B2B POS application for global
+          beverage client
 
-          * Designed and developed components, integrated TR ONESOURCE tax and
-          Adyen payment for a luxury apparel client’s Sales Cloud and Service
-          Cloud 
+          * Designed and developed components, integrated TR ONESOURCE tax,
+          Adyen payment in Sales + Service Cloud for luxury apparel client
 
-          * Assisted in implementing Sales Cloud custom functionality for a
-          leading e-commerce client
+          * Implemented Sales Cloud in Apex for unicorn ecommerce client
 
-          * Provided expertise on data analytics and continuous integration best
-          practices to multiple projects
-
-          * Improved the Furniture Bank’s donation management and analytics
-          processes on a pro-bono project
+          * Provided data and continuous integration best practices across
+          Slalom
         date: Winter 2018
         title: Development and Consulting Intern
         subtitle: Slalom Consulting (Toronto)
       - body: >-
-          * Managed multiple projects of varying sizes in the Investments and
-          Corporate Application Services division
-
-          * Developed time-saving project resource management software used by
-          full-time PMs as well as other automation software
-
-          * Chosen among Sun Life Financial Co-op students to present to
-          Investments and Corporate Application Services Vice President and
-          senior members
-
-          * Received an Excellence award in project management tasks, automation
-          and process improvements
+          * Received the Corporate Excellence award in project management tasks,
+          automation and process improvements
         date: Winter 2017
         title: IT Project Management Specialist
         subtitle: Sun Life Financial (Waterloo)
