@@ -41,7 +41,7 @@ const ContactSection = (props) => {
 
                 <div className="container-item container-item-center">
 
-                    <img className="profile-image" src="/static/img/me.png"></img>
+                    <img className="profile-image" src="/static/img/me2.png"></img>
 
                 </div>
 

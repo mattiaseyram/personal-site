@@ -21,6 +21,8 @@ const Card = (props) => {
             </div>
         ));
 
+    const showDivider = Boolean(body || imageItems.length);
+
     return (
         <div className="container-item card">
 
@@ -30,20 +32,20 @@ const Card = (props) => {
 
             {(date || subtitle) &&
                 <div className="card-subtitle-container">
-                <p className="card-subtitle">{subtitle}</p>
-                <p className="card-subtitle card-date">{date}</p>
+                    <p className="card-subtitle">{subtitle}</p>
+                    <p className="card-subtitle card-date">{date}</p>
 
                 </div>
             }
 
-            <div className="divider" />
+            {showDivider && <div className="divider" />}
 
             {body &&
                 <ReactMarkdown className="card-text" source={body} />
             }
 
             <div>
-                {imageItems.length > 0 &&
+                {Boolean(imageItems.length) &&
                     <Carousel className="carousel" {...settings}>
                         {imageItems}
                     </Carousel>

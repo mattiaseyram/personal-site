@@ -71,7 +71,7 @@ ul, li {
 
 @media only screen and (min-width: 768px) {
     .title>* {
-        font-size: 4em;
+        font-size: 3.5em;
     }
     .title.big-title>* {
         font-size: 5em;
@@ -143,10 +143,10 @@ ul, li {
     display: flex;
     flex-direction: column;
     padding: 2vh 2.5vw;
-    margin: 4vh 0vw;
+    margin: 2vh 0vw;
     justify-content: start;
     text-align: start;
-
+    width: 100%;
     border-radius: 2vw;
     background-color: var(--card-color);
     backdrop-filter: blur(5px);
@@ -154,7 +154,7 @@ ul, li {
 }
 
 .card-title {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .card-subtitle {
@@ -190,6 +190,14 @@ ul, li {
 
 @media only screen and (min-width: 768px) {
     .card {
+        width: 80%;
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .card {
+        width: 60%;
         max-width: 60%;
     }
 }
@@ -217,7 +225,7 @@ ul, li {
     height: 30vh;
     width: 30vh;
     border: 5px solid var(--divider-color);
-    transform: rotate(5deg);
+    /*transform: rotate(5deg);*/
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     background-color: var(--translucent-color);

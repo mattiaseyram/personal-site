@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const Links = () => {
 
@@ -20,7 +20,7 @@ const Links = () => {
             label: 'projects'
         },
         {
-            path: '/static/pdf/Mattias Eyram Resume Spring 2019 WEB.pdf',
+            path: 'static/pdf/Mattias_Eyram_Resume_Fall_2019.pdf',
             label: 'resume'
         }
     ];
@@ -31,7 +31,7 @@ const Links = () => {
 
     const linkElements = links
         .map((item, i) => (
-            <a href={item.path} className="" key={i}>{item.label}</a>
+            <a href={item.path} className="" key={`links-${i}`}>{item.label}</a>
         ))
         .reduce((acc, el) => ([...acc, el, bullet(acc.length)]), [])
         .slice(0, -1);
