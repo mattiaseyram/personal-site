@@ -55,10 +55,16 @@ sections:
     type: cards
   - alignment: container-center
     cards:
-      - date: Fall 2019
+      - body: >-
+          * Queue system + facial recognition check-in for clinics with
+          scikit-learn wait time prediction
+        date: Fall 2019
         title: Waitless
         subtitle: McGill code.jam
-      - body: ''
+      - body: >-
+          * Recommending vaccinations (data scraped from the Government of
+          Canada Travel Vaccinations site) and clinics based on travel
+          destination
         date: Fall 2019
         title: Destination Vaccination
         subtitle: Google Cloud Platform + Hopper Travelhacks
