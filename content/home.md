@@ -38,15 +38,15 @@ sections:
         date: Fall 2019
         title: Backend Developer Intern
         subtitle: Shopify - Money
-      - body: >-
+      - body: ''
         date: Fall 2018
         title: Full-Stack Engineering Intern
         subtitle: Vlocity (San Francisco)
-      - body: >-
+      - body: ''
         date: Winter 2018
         title: Development and Consulting Intern
         subtitle: Slalom Consulting (Toronto)
-      - body: >-
+      - body: ''
         date: Winter 2017
         title: IT Project Management Specialist
         subtitle: Sun Life Financial (Waterloo)
@@ -55,15 +55,18 @@ sections:
     type: cards
   - alignment: container-center
     cards:
-      - body: >-
-        date: Fall 2020
+      - date: Fall 2019
+        title: Waitless
+        subtitle: McGill code.jam
+      - body: ''
+        date: Fall 2019
         title: Destination Vaccination
-        subtitle: Google Cloud + Hopper Travelhacks
-      - body: >-
+        subtitle: Google Cloud Platform + Hopper Travelhacks
+      - body: ''
         date: Fall 2020
         title: Meetability
         subtitle: Hack the North
-      - body: >-
+      - body: ''
         date: Winter 2019
         images:
           - /static/img/elevate-dashboard-dev.netlify.com_students (8).png
@@ -76,12 +79,11 @@ sections:
           - /static/img/elevate-dashboard-dev.netlify.com_students (10).png
         title: Elevate Dashboard
         subtitle: UW Blueprint
-      - body: >-
-          <https://ddclub.uwaterloo.ca>
+      - body: '<https://ddclub.uwaterloo.ca>'
         date: Spring 2018
         title: Double Degree Club Website
         subtitle: Double Degree Club
-      - body: >-
+      - body: ''
         date: Fall 2018
         title: YourAMA
         subtitle: Netlify JAMStack Hackathon
