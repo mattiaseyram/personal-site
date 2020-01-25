@@ -35,8 +35,8 @@ sections:
   - alignment: container-center
     cards:
       - body: ''
-        date: Fall 2019
-        title: Backend Developer Intern
+        date: Fall 2019 - Present
+        title: Developer Intern
         subtitle: Shopify - Money
       - body: ''
         date: Fall 2018
