@@ -30,7 +30,7 @@
 %% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
 % Change the page layout if you need to
-\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.3cm,bottom=1.3cm}
 
 % Change the font if you want to, depending on whether
 % you're using pdflatex or xelatex/lualatex
@@ -43,6 +43,10 @@
   \usepackage[T1]{fontenc}
   \usepackage[default]{lato}
 \fi
+
+% hyperlinks
+\usepackage{hyperref}
+
 
 % Change the colours if you want to
 \definecolor{VividBlue}{HTML}{007980}
@@ -58,9 +62,6 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% sample.bib contains your publications
-% \addbibresource{sample.bib}
-
 \begin{document}
 \name{Mattias Eyram}
 \tagline{Full-Stack Engineer | BCS/BBA Double Degree at UW/WLU}
@@ -70,7 +71,7 @@
   % You can add your own with \printinfo{symbol}{detail}
   \email{mattiaseyram@gmail.com}
   \phone{905-616-9411}
-  \location{Ontario, Canada and everywhere else}
+  \location{Toronto, ON, Canada}
   \break
   \homepage{www.mattiaseyram.com}
   \linkedin{linkedin.com/in/mattiaseyram}
@@ -93,26 +94,27 @@
 %% \cvsection title in the "main" bar.
 \cvsection[page1sidebar]{Experience}
 
-\cveventinline{Back-end Engineering Intern}{Shopify - Money}{Sept 2019 -- Present}{Ottawa, ON}
+\cveventinline{Software Developer Intern}{Shopify - Money}{Sept 2019 -- Present}{Ottawa \& Waterloo, ON}
 \begin{itemize}
-\item Implemented idempotency logic for Stripe and Paypal charges, \break eliminating wasteful API calls
+\item Implemented Stripe and Paypal API idempotency in Ruby on Rails
+\item Developed a location-based dynamic tax number retrieval system
 \item Refactored subscriptions pages to account for different plan changes
+\item Prototyped and spearheaded Elasticsearch implementation for \break financial reconciliation platform, quickening anomaly resolution
 \end{itemize}
 
 \divider
 
 \cveventinline{Lead Full-Stack Engineer}{KibiTech - Elevate}{Jan 2019 -- Present}{Waterloo, ON}
 \begin{itemize}
-\item Led team of 10 through UW Blueprint to assist in developing a game-based e-learning platform for young adults with disabilities
-\item Elevate has now won the Vlocity Fund Finals Accessibility Prize and participated in the Denmark University Startup World Cup
-\item Designed the architecture and led development of the parent portal to assess player scores and manage accounts
+\item Led 10 others to design and develop parent portal in React/Firebase
+\item Elevate has won the Velocity Fund Finals Accessibility Prize, \break 3rd place in the 2019 University Startup World Cup's Social category
 \end{itemize}
 
 \divider
 
 \cveventinline{Full-Stack Engineering Intern}{Vlocity - OmniScript}{Sept 2018 -- Dec 2018}{San Francisco, CA}
 \begin{itemize}
-\item Prototyped and shipped the Vlocity Upgrade Wizard, a web platform used by multiple clients to create, execute, automate and diagnose declarative tasks
+\item Prototyped and shipped the Vlocity Upgrade Wizard, a web platform for clients to create, execute, automate and diagnose declarative tasks
 \item Guided the docs team on replacing complex admin documentation with JSON generated through the step creator UI
 \item Developed a dynamic Tooling REST API wrapper enabling metadata changes through Salesforce Lightning and Apex
 \item Created a pipeline to package stand-alone apps outside of the Vlocity codebase, preventing code duplication and increasing maintainability
@@ -125,56 +127,28 @@
 \item Developed and tested a Commerce Cloud B2B POS application for global beverage client
 \item Designed and developed components, integrated TR ONESOURCE tax, Adyen payment in Sales + Service Cloud for luxury apparel client
 \item Implemented Sales Cloud in Apex for unicorn ecommerce client
-\item Provided data and continuous integration best practices across Slalom
 \end{itemize}
 
 \divider
 
 \cveventinline{IT Project Management Specialist}{Sun Life Financial - ICAS}{Jan 2017 -- April 2017}{Waterloo, ON}
 \begin{itemize}
-\item Received the Corporate Excellence award in project management tasks, automation and process improvements
+\item Corporate Excellence award for automation, process improvements
 \end{itemize}
 
 \divider
 
 \cveventinline{Manager and Head Instructor}{Burlington Able Sail}{June 2013 -- Sept 2016}{Burlington, ON}
-
-%\medskip
-
-% \cvsection{A Day of My Life}
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-% \wheelchart{1.5cm}{0.5cm}{%
-%   6/8em/accent!30/{Sleep,\\beautiful sleep},
-%   3/8em/accent!40/Hopeful novelist by night,
-%   8/8em/accent!60/Daytime job,
-%   2/10em/accent/Sports and relaxation,
-%   5/6em/accent!20/Spending time with family
-% }
-
-% \clearpage
-% \cvsection[page2sidebar]{Publications}
-
-% \nocite{*}
-
-% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-% \divider
-
-% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}},type=article]
-
-% \divider
-
-% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
-
-%% If the NEXT page doesn't start with a \cvsection but you'd
-%% still like to add a sidebar, then use this command on THIS
-%% page to add it. The optional argument lets you pull up the
-%% sidebar a bit so that it looks aligned with the top of the
-%% main column.
-% \addnextpagesidebar[-1ex]{page3sidebar}
-
+\begin{itemize}
+\item \underline{\href{https://www.thespec.com/living-story/4735122-video-sails-lift-barriers-for-disabled/}{Article: Sails lift barriers for disabled}}
+\end{itemize}
 
 \end{document}
+
+
+% \cveventinline{Lead Full-Stack Engineer}{KibiTech - Elevate}{Jan 2019 -- Present}{Waterloo, ON}
+% \begin{itemize}
+% \item Led team of 10 through UW Blueprint to assist in developing a game-based e-learning platform for young adults with disabilities
+% \item Elevate has won the Velocity Fund Finals Accessibility Prize, \break 3rd place in the 2019 University Startup World Cup's Social category
+% \item Designed the architecture and led development of the parent portal to assess player scores and manage accounts
+% \end{itemize}

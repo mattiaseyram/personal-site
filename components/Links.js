@@ -20,7 +20,7 @@ const Links = () => {
             label: 'projects'
         },
         {
-            path: 'static/img/mattias_eyram_resume_fall_2019.pdf',
+            path: 'static/img/Mattias_Eyram_Resume_Winter_2020.pdf',
             label: 'resume'
         }
     ];
