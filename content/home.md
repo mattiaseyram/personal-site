@@ -7,11 +7,12 @@ subtitle: |-
 sections:
   - alignment: container-start
     body: >-
-      I'm a driven, well-rounded individual with over 1 year of professional
-      work experience. I graduate from _The University of Waterloo_ and _Wilfrid
-      Laurier University_'s joint **Computer Science** and **Business
-      Administration** double degree in 2020. I'm passionate about full-stack
-      software engineering, business enablement, product development and design.
+      I'm a passionate individual with **20+ months** of *software engineering*,
+      *business enablement*, and *product development* experience at leading
+      firms like **Shopify**, **Vlocity** and **Slalom**. I graduate from *The
+      University of Waterloo* and *Wilfrid Laurier University*'s joint
+      **Computer Science** and **Business Administration** double degree in
+      2020.
     id: intro
     title: ''
     type: paragraph
