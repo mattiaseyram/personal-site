@@ -6,12 +6,12 @@ subtitle: |-
   and Software Engineer
 sections:
   - alignment: container-start
-    body: I'm a passionate individual with **20+ months** of *software engineering*,
-      *business enablement*, and *product development* experience at leading
-      firms like **Shopify**, **Vlocity** and **Slalom**. I graduate from *The
-      University of Waterloo* and *Wilfrid Laurier University*'s joint
-      **Computer Science** and **Business Administration** double degree in
-      2020.
+    body: I'm a passionate individual with **20+ months** of **software
+      engineering**, **business enablement**, and **product development**
+      experience at leading firms like **Shopify**, **Vlocity** and **Slalom**.
+      I graduate from *The University of Waterloo* and *Wilfrid Laurier
+      University*'s joint **Computer Science** and **Business Administration**
+      double degree in 2020.
     id: intro
     title: ""
     type: paragraph
