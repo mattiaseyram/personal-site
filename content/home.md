@@ -37,7 +37,7 @@ sections:
       - body: ""
         date: Fall 2019 - Present
         title: Developer
-        subtitle: Shopify - Money (Ottawa + Waterloo + Remote)
+        subtitle: Shopify - Money
       - body: ""
         date: Fall 2018
         title: Full-Stack Engineer
