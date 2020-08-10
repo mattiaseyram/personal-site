@@ -1,14 +1,11 @@
 ---
 title: Mattias Eyram
-subtitle: |-
-  Ambitious Double Degree Student
-
-  and Software Engineer
+subtitle: Full-Stack Software Engineer
 sections:
   - alignment: container-start
     body: I'm a passionate individual with 3+ years of **software engineering**,
       **business enablement**, and **product development** experience at leading
-      firms like **Shopify**, **Vlocity** and **Slalom**. I graduate from **The
+      firms like **Shopify**, **Vlocity** and **Slalom**. I graduated from **The
       University of Waterloo** and **Wilfrid Laurier University**'s joint
       **Computer Science** and **Business Administration** double degree in
       2020.
@@ -34,8 +31,11 @@ sections:
     type: links
   - alignment: container-center
     cards:
+      - title: Software Engineering Consultant
+        subtitle: Lazer Technologies
+        date: Summer 2020 - Present
       - body: ""
-        date: Fall 2019 - Present
+        date: Fall 2019 - Summer 2020
         title: Developer
         subtitle: Shopify - Money
       - body: ""
