@@ -5,9 +5,7 @@ import ReactMarkdown from 'react-markdown';
 const ContactSection = (props) => {
 
     const { section = {} } = props;
-    const { id, type, alignment = "container-start", title, subtitle, body, links = [] } = section;
-
-    const divider = (key) => (<div className="divider" key={key}/>);
+    const { id, alignment = "container-start", title, subtitle, links = [] } = section;
 
     const linkElements = links
         .map((link) => (
@@ -17,11 +15,11 @@ const ContactSection = (props) => {
                 {link.title}
             </a>
         ))
-        .reduce((acc, el) => ([...acc, el, divider(acc.length)]), [])
+        .reduce((acc, el) => ([...acc, el, <div className="divider" key={acc.length} />]), [])
         .slice(0, -1);
 
     return (
-        <div className="container-top" id={id}>
+        <div id={id}>
             {title &&
                 <div className="container container-start">
                     <ReactMarkdown className="title" source={title} />

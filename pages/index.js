@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 //libs
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
@@ -21,13 +21,10 @@ const Home = () => {
     const { attributes = { sections: [] } } = content;
     const { title = '', subtitle = '' } = attributes;
 
-    //get sections as map
     const sections = attributes.sections.reduce((obj, section) => {
         obj[section.id] = section;
         return obj;
     }, {});
-
-    //console.log(sections);
 
     const scrollSections = ['intro', 'contact', 'experience', 'projects'];
 
@@ -84,19 +81,9 @@ const Home = () => {
 
                 <div className="divider" />
 
-                <ParagraphSection section={sections.intro} />
-
-                <Links />
+                <ContactSection section={sections.contact} />
 
             </div>
-
-            <ContactSection section={sections.contact} />
-
-            <CardSection section={sections.experience} />
-
-            <CardSection section={sections.projects} />
-
-            <ScrollButtons sections={scrollSections} />
 
         </div>
     );

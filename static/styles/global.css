@@ -106,7 +106,7 @@ ul, li {
     flex-direction: column;
     flex-wrap: false;
     justify-content: flex-start;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 4vh 10vw;
 }
 

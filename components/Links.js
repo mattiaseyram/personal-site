@@ -15,14 +15,14 @@ const Links = () => {
             path: '#experience',
             label: 'experience'
         },
-        {
-            path: '#projects',
-            label: 'projects'
-        },
-        {
-            path: 'static/img/Mattias_Eyram_Resume_Winter_2020.pdf',
-            label: 'resume'
-        }
+        // {
+        //     path: '#projects',
+        //     label: 'projects'
+        // },
+        // {
+        //     path: 'static/img/Mattias_Eyram_Resume_Winter_2020.pdf',
+        //     label: 'resume'
+        // }
     ];
 
     const bullet = (key) => (
